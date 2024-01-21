@@ -50,7 +50,7 @@ function run_socks5() {
   echo $! > s5.pid
 }
 
-menu() {
+run() {
   read -rp "请输入用户名(默认：guest)：" USER
   [ -z "$USER" ] && USER="guest"
 
@@ -71,4 +71,4 @@ menu() {
   run_socks5 $USER $PASS $PORT
 }
 
-menu "$@"
+run "$@"
