@@ -54,8 +54,8 @@ run() {
   read -rp "请输入用户名(默认：guest)：" USER
   [ -z "$USER" ] && USER="guest"
 
-  read -rp "请输入密码(默认：Qa@112233)：" PASS
-  [ -z "$PASS" ] && PASS="Qa@112233"
+  read -rp "请输入密码(默认：Qa112233)：" PASS
+  [ -z "$PASS" ] && PASS="Qa112233"
 
   read -rp "请输入端口号(默认：1443)：" PORT
   [ -z "$PORT" ] && PORT="1443"
